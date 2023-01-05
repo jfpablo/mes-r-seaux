@@ -1,4 +1,4 @@
- <html>
+<html>
                 <head>
                 <title>Accueil (mes réseaux)</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,7 +33,7 @@ center
 {
 margin-top: 10px;
 }
-#bottombar
+#banner
 {
 bottom : 0px;
 width : 100%;
@@ -41,6 +41,17 @@ position : fixed;
 height: 70px;
     background: whitesmoke;
     color: black;
+z-index: 2
+}
+#wall
+{
+width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background: #0000004d;
+    z-index: 1;
+}
 </style>
                 </head>
 <body>
@@ -51,6 +62,13 @@ height: 70px;
 <center><a href="https://t.me/jefe_pablo">Mon telegram</a></center>
 <center><a href="tel:+33750048992">Mon numéro</a></center>
 Autres moyens de me contacter :<p></p> <li>facetime</li><li>imessages</li><li>whatsapp</li><li>messenger</li>
-<div id="bottombar"><center>rappel ceci n'a pas pour but d'être spammé ou de recevoir  des canulars téléphoniques mais de partager mes coordonées</center></div>
+<div id="wall"></div>
+<div id="banner"><center>rappel ceci n'a pas pour but d'être spammé ou de recevoir  des canulars téléphoniques mais de partager mes coordonées</center><a onclick="check()">OK</a></div>
 </body>
+<script>
+function check(){
+banner.style.display="none";
+wall.style.display="none";
+}
+</script>
 </html>
