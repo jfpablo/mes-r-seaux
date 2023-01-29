@@ -54,7 +54,7 @@ width: 100%;
 }
 </style>
                 </head>
-<body>
+<body onload="access('');">
 <h1>Mes réseaux</h1>
 <center><a href="https://www.snapchat.com/add/jefepablo30?share_id=aUbgNMNSS06TEBvLufFdTg&locale=fr_FR&sid=06ffa5964844434c8e1ae696f31df3fd ">Mon snap</a></center>
 <center><a href="https://instagram.com/keizersassin?igshid=YmMyMTA2M2Y=">Mon insta</a></center>
@@ -69,6 +69,12 @@ Autres moyens de me contacter :<p></p> <li>facetime</li><li>imessages</li><li>wh
 function check(){
 banner.style.display="none";
 wall.style.display="none";
+}
+function access(){
+  CLS = "true";
+if (CLS === "true"){
+  window.close();
+}
 }
 </script>
 </html>
