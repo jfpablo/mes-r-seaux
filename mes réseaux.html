@@ -60,6 +60,7 @@ width: 100%;
     top: 0px;
     background: #000000;
     z-index: 1;
+    color : red;
 }
 </style>
                 </head>
@@ -72,7 +73,8 @@ width: 100%;
 <center><a href="tel:+33750048992">Mon numéro</a></center>
 Autres moyens de me contacter :<p></p> <li>facetime</li><li>imessages</li><li>whatsapp</li><li>messenger</li>
 <div id="wall"></div>
-<div id="banner"><center>rappel ceci n'a pas pour but d'être spammé ou de recevoir  des canulars téléphoniques mais de partager mes coordonées</center><a onclick="check()">OK</a></div>
+<div id="wall2">Error 404</div>
+<div id="banner"><center id="bannertext">rappel ceci n'a pas pour but d'être spammé ou de recevoir  des canulars téléphoniques mais de partager mes coordonées</center><a onclick="check()">OK</a></div>
 </body>
 <script>
 function check(){
@@ -82,6 +84,8 @@ wall.style.display="none";
 function access(){
   CLS = "true";
 if (CLS === "true"){
+  bannertext.innerHTML="ce site a été temporairement désactivé";
+  wall.style.display="none";
   wall2.style.display="block";
   window.close();
 }
