@@ -52,6 +52,15 @@ width: 100%;
     background: #0000004d;
     z-index: 1;
 }
+#wall2
+{
+width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background: #000000;
+    z-index: 1;
+}
 </style>
                 </head>
 <body onload="access('');">
@@ -73,6 +82,7 @@ wall.style.display="none";
 function access(){
   CLS = "true";
 if (CLS === "true"){
+  wall2.style.display="block";
   window.close();
 }
 }
